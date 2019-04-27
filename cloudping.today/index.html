@@ -21,14 +21,34 @@ See http://msdn.microsoft.com/en-us/library/ms535242.aspx
 </div>
 
 <p>Testing each HTTP CloudWatch endpoint</p>
+<p>Current status: The AWS Cloud spans 64 Availability Zones within 21 geographic Regions around the world, with announced plans for 12 more Availability Zones and four more Regions in Bahrain, Cape Town, Jakarta, and Milan.</p>
+<p>Please refer to: <A href="https://amazonaws-china.com/about-aws/global-infrastructure/?nc1=h_ls" target=_blank>AWS Global Infrastructure</A> for more detail</p>
+<p>New cool site: <A href="http://www.infrastructure.aws/" target=_blank>AWS Infra - New</A></p>
 
 <div id=content>
 
 <table id="pinger">
     <tr>
+        <td id='imageCell'></td>
+        <td><input type='submit' id='pingbutton' value="     HTTP Ping     "></td>
+    </tr>
+    <tr>
         <th>Region</th>
         <th>Latency</th>
     </tr>
+    <tr>
+        <td>China (Beijing)</td>
+        <td class='latency'  id='cn-north-1' endpoint='http://monitoring.cn-north-1.amazonaws.com.cn/'>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>China (Ningxia)</td>
+        <td class='latency'  id='cn-northwest-1' endpoint='http://monitoring.cn-northwest-1.amazonaws.com.cn/'>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>Asia Pacific(Hong Kong) - New !!! </td>
+        <td class='latency'  id='ap-east-1' endpoint='http://monitoring.ap-east-1.amazonaws.com/'>&nbsp;</td>
+    </tr>
+
     <tr>
         <td>US-East (Virginia)</td>
         <td class='latency' id='us-east-1' endpoint='http://monitoring.us-east-1.amazonaws.com/'>&nbsp;</td>
@@ -81,6 +101,10 @@ See http://msdn.microsoft.com/en-us/library/ms535242.aspx
         <td class='latency'  id='ap-northeast-1' endpoint='http://monitoring.ap-northeast-1.amazonaws.com/'>&nbsp;</td>
     </tr>
     <tr>
+        <td>Osaka-Local(Japan)</td>
+        <td class='latency'  id='ap-northeast-3' endpoint='http://monitoring.ap-northeast-3.amazonaws.com/'>&nbsp;</td>
+    </tr>
+    <tr>
         <td>Asia Pacific (Mumbai)</td>
         <td class='latency'  id='sa-east-1' endpoint='http://monitoring.ap-south-1.amazonaws.com/'>&nbsp;</td>
     </tr>
@@ -89,17 +113,14 @@ See http://msdn.microsoft.com/en-us/library/ms535242.aspx
         <td class='latency'  id='sa-east-1' endpoint='http://monitoring.sa-east-1.amazonaws.com/'>&nbsp;</td>
     </tr>
     <tr>
-        <td>Hong Kong(China) - New !!! </td>
-        <td class='latency'  id='ap-east-1' endpoint='http://monitoring.ap-east-1.amazonaws.com/'>&nbsp;</td>
+        <td>AWS GovCloud (US-East)</td>
+        <td class='latency'  id='us-gov-east-1' endpoint='http://monitoring.us-gov-east-1.amazonaws.com/'>&nbsp;</td>
     </tr>
     <tr>
-        <td>China (Beijing)</td>
-        <td class='latency'  id='cn-north-1' endpoint='http://monitoring.cn-north-1.amazonaws.com.cn/'>&nbsp;</td>
+        <td>AWS GovCloud (US)</td>
+        <td class='latency'  id='us-gov-west-1' endpoint='http://monitoring.us-gov-west-1.amazonaws.com/'>&nbsp;</td>
     </tr>
-    <tr>
-        <td>China (Ningxia)</td>
-        <td class='latency'  id='cn-northwest-1' endpoint='http://monitoring.cn-northwest-1.amazonaws.com.cn/'>&nbsp;</td>
-    </tr>
+
     <tr>
         <td id='imageCell'></td>
         <td><input type='submit' id='pingbutton' value="     HTTP Ping     "></td>
